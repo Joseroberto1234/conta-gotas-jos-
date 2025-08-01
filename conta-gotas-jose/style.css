@@ -30,6 +30,7 @@ header{
     width: 430px;
     height: 180px;
     background-color: white;
+    text-align: center;
 }
 
 #logos > img{
@@ -83,24 +84,82 @@ main{
 #video{
     height: 495px;
     width: 45%;
+    text-align: center;
+}
+
+#video > iframe{
+    margin-top: 20px;
 }
 
 #lado-direito{
     height: 495px;
-    width: 45%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #redes{
     height: 35%;
+    text-align: center;
 }
 
 #login{
     height: 64%;
+    text-align: center;
+}
+
+a{
+    color: #3bacd9;
+}
+
+.opcoes{
+    width: 70%;
+    height: 40px;
+    background-color: #2484bf;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.opcoes::placeholder{
+    text-align: center;
+    color: white;
+}
+
+#mais{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background-color: #4fce2d;
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:active{
+    background-color: #2484bf;
 }
 
 #apoio{
-    height: 190px;
-    width: 90%;
+    height: 220px;
+    width: 95%;
+    text-align: center;
+}
+
+#apoio > img{
+    margin-top: -40px;
 }
 
 footer{
@@ -108,7 +167,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap:10px;
 }
 
 .item{
@@ -117,14 +176,13 @@ footer{
     width: 440px;
     border-radius: 20px;
     text-align: center;
-
 }
 
 h1{
-    font-size: 35px;  
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
-    margin-top: 10px 0px;
+    margin: 10px 0px;
 }
 
 .item > p{
@@ -132,16 +190,44 @@ h1{
     margin: auto;
     font-size: 20px;
     text-align: justify;
-    
+    margin: 20px;
 }
 
 .item > img{
     width: 50%;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .item > h2{
     text-align: start;
     margin: 20px;
     font-weight: 400;
+}
+
+#gera12{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards{
+    height: 320px;
+    width: 390px;
+    background-color: white;
+}
+
+.cards > ul{
+    width: 80%;
+    margin:auto
+}
+
+#texto{
+    height: 320px;
+    width: 390px;
 }
